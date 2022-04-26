@@ -5,8 +5,6 @@ $title = "Главная страница";
 require "lib/layouts/app.php";
 require "lib/layouts/header.php";
 ?>
-<div class="wrapper">
-
     <form action="lib/handler.php" method="post">
         Введите имя<br>
         <input name="phone" type="text" placeholder="+70000000000" pattern="\+?[0-9]{11}"><br>
@@ -64,4 +62,3 @@ unset($_SESSION['user']);
 <?php
 require "lib/layouts/footer.php";
 ?>
-</div>
