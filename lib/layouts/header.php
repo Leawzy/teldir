@@ -3,11 +3,10 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Главная</a>
-                    <a href="#">О нас</a>
-                    <a href="#">Политика</a>
+                    <a href="index.php">Главная</a>
+                    <a href="">О нас</a>
+                    <a href="privacy.php">Политика</a>
                 </li>
             </ul>
         </nav>
-        <a href="#" class="header__button">Авторизация</a>
     </header>

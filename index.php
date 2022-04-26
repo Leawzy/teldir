@@ -5,13 +5,29 @@ $title = "Главная страница";
 require "lib/layouts/app.php";
 require "lib/layouts/header.php";
 ?>
-    <form action="lib/handler.php" method="post">
-        Введите имя<br>
-        <input name="phone" type="text" placeholder="+70000000000" pattern="\+?[0-9]{11}"><br>
-        или фамилию<br>
-        <input name="last_name" type="text" placeholder="Введите фамилию"><br>>
-        <button type="submit">клик</button>
-    </form>
+    <div class="header__content">
+        <div class="header__content-text">
+            <h1>Быстро. Легко.</h1>
+            <span>Найти вашего человека</span>
+            <p>
+                Это давно установленный факт, что читатель будет отвлекаться на удобочитаемое содержание страницы при просмотре ее макета. Смысл использования Lorem Ipsum.</p>
+            <a href="#">Присоединиться</a>
+        </div>
+        <div class="header__content-img">
+            <img src="assets/img/header_img.svg" alt="">
+        </div>
+    </div>
+    <div class="form__search">
+        <h2>Телефонный справочник</h2>
+        <div class="border"></div>
+        <form action="lib/handler.php" method="post">
+            Введите имя<br>
+            <input name="phone" type="text" placeholder="+70000000000" pattern="\+?[0-9]{11}"><br>
+            или фамилию<br>
+            <input name="last_name" type="text" placeholder="Введите фамилию"><br>
+            <button type="submit">клик</button>
+        </form>
+    </div>
 
 <?php
 if($_SESSION['message']){
@@ -21,24 +37,7 @@ unset($_SESSION['message']);
 
 
 if($_SESSION['user']) {
-    echo "<pre>";
-    print_r($_SESSION['user']);
-    echo "</pre>";
     ?>
-    <style>
-        th, td {
-            padding: 10px;
-        }
-
-        th {
-            background: #606060;
-            color: #fff;
-        }
-
-        td {
-            background: #b5b5b5;
-        }
-    </style>
     <table>
     <tr>
         <th>ФИО</th>
