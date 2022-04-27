@@ -97,6 +97,13 @@ li > a:hover {
     line-height: 28px;
 }
 
+.header__content-img > img {
+    width: 655px;
+    height: 604px;
+    background-position: center;
+    background-size: cover;
+}
+
 .header__content-text > a {
     padding: 18px 24px;
     box-shadow: 0px 5px 50px rgba(255, 0, 67, 0.1);
@@ -160,6 +167,21 @@ button {
 
 .privacy__content-text {
     margin-bottom: 30px;
+}
+
+.form__search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+table {
+    margin-top: 32px;
+}
+
+.errorMess {
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 footer {
