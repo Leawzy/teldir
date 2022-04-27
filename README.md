@@ -1,3 +1,3 @@
 Простейший телефонный справочник
 
-![50%](https://progress-bar.dev/50)
+![65%](https://progress-bar.dev/50)
