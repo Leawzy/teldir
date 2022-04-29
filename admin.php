@@ -26,7 +26,7 @@ echo "Добро пожаловать: " .$_SESSION['admin']['login'];
 if($_SESSION['adm_message']){
 echo '<p id="errorMess"> '. $_SESSION['adm_message'] . '</p>';
 }
-unset($_SESSION['message']);
+unset($_SESSION['adm_message']);
 ?>
 
 <br><a href="lib/logout.php">Выход</a>
