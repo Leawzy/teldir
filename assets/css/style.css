@@ -139,6 +139,14 @@ input {
     border: 1px solid #4287f5;
 }
 
+textarea {
+    margin-top: 20px;
+    width: 300px;
+    height: 120px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
 button {
     margin-top: 12px;
     padding: 12px 45px;
@@ -189,3 +197,205 @@ footer {
     border-top: 2px solid var(--greycolor);
 }
 
+#toTop {
+    position: fixed;
+    display: inline-block;
+    bottom: 30px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background: var(--hovertext);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+#toTop:hover {
+    box-shadow: 0px 5px 50px rgba(255, 0, 67, 0.4);
+}
+
+#toTop svg {
+    position: relative;
+    top: 12px;
+    right: -1px;
+    fill: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#toTop:hover svg {
+    cursor: pointer;
+    fill: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#toTop.show {
+    opacity: 1;
+    visibility: visible;
+    right: calc(2%);
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.faq-heading {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.faq-card {
+    border: 1px solid #dce0e8;
+    border-radius: 6px;
+    padding: 24px 20px;
+    margin-bottom: 12px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-open-icon {
+    font-size: 22px;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-weight: 700;
+}
+
+details[open] .faq-open-icon {
+    top: 18px;
+    right: 24px;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary {
+    color: #0186ff;
+    font-weight: 500;
+}
+
+details[open] .faq-card-spoiler {
+    display: inline-block;
+    padding-top: 8px;
+    color: #8b8b9a;
+    font-size: 12px;
+}
+
+.faq-aftertext {
+    text-align: center;
+    color: #8b8b9a;
+}
+
+.about__form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__form > textarea {
+    resize: none;
+}
+
+.about__form > textarea, input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__form > button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 340px;
+    height: 40px;
+}
+
+.footer-distributed {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}

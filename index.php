@@ -11,13 +11,13 @@ require "lib/layouts/header.php";
             <span>Найти вашего человека</span>
             <p>
                 Это давно установленный факт, что читатель будет отвлекаться на удобочитаемое содержание страницы при просмотре ее макета. Смысл использования Lorem Ipsum.</p>
-            <a href="#">Присоединиться</a>
+            <a href="#form__search">Присоединиться</a>
         </div>
         <div class="header__content-img">
             <img src="assets/img/header_img.svg" alt="">
         </div>
     </div>
-    <div class="form__search">
+    <div class="form__search" id="form__search">
         <div class="form__search-form">
             <h2>Телефонный справочник</h2>
             <div class="border"></div>
